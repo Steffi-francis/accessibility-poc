@@ -1,0 +1,53 @@
+.application-form-section {
+  background-color: var(--color-primary-light);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.application-form-section h3 {
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  padding: 8px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.low-contrast {
+  color: var(--color-secondary);
+}
+
+.submit-btn {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  width: fit-content;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+  outline: 2px solid var(--color-secondary);
+}

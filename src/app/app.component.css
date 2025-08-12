@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h3 {
+    margin-bottom: 15px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  nav ul li {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 350px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .low-contrast {
+    color: #bfbfbf; /* still WCAG fail for testing */
+  }
+  
+  .submit-btn {
+    background-color: blue; /* still poor contrast for WCAG testing */
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    width: fit-content;
+  }
+  

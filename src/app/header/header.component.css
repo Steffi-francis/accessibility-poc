@@ -1,0 +1,62 @@
+/* Base navigation layout */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover & focus states for accessibility */
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: #AFDDFF; 
+  color: black;
+  outline: none;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #FFECDb; 
+  border: 1px solid #AFDDFF;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  min-width: 180px;
+  border-radius: 6px;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: black;
+}
+
+.dropdown ul li a:hover,
+.dropdown ul li a:focus {
+  background-color: #FF9149; 
+  color: white;
+}
+
+/* Show dropdown when open */
+.dropdown.open ul {
+  display: block;
+}

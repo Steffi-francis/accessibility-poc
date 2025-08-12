@@ -1,0 +1,31 @@
+<header>
+  <nav aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="/">Home</a></li>
+
+      <li class="dropdown" [class.open]="jobsMenuOpen">
+        <a 
+          href="#" 
+          id="jobsMenuLink"
+          aria-haspopup="true"
+          [attr.aria-expanded]="jobsMenuOpen"
+          (click)="toggleJobsMenu(); $event.preventDefault()"
+        >
+          Jobs
+        </a>
+
+        <ul 
+          *ngIf="jobsMenuOpen" 
+          role="menu" 
+          aria-labelledby="jobsMenuLink"
+        >
+          <li role="menuitem"><a href="/jobs/development">Development</a></li>
+          <li role="menuitem"><a href="/jobs/design">Design</a></li>
+          <li role="menuitem"><a href="/jobs/marketing">Marketing</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>

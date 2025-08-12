@@ -1,0 +1,50 @@
+:root {
+    --color-primary: #001BB7;
+    --color-primary-light: #AFDDFF;
+    --color-accent: #FF9149;
+    --color-background: #FFECDb;
+    --color-text: #000000;
+    --color-white: #ffffff;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+  
+  /* Buttons */
+  button, .btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-text);
+  }
+  
+  /* Links */
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+  
+  /* Cards / Containers */
+  .card {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
