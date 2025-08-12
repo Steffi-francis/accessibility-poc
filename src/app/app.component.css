@@ -34,13 +34,9 @@ body {
     border-radius: 4px;
     width: 100%;
   }
-  
-  .low-contrast {
-    color: #bfbfbf; /* still WCAG fail for testing */
-  }
-  
+
   .submit-btn {
-    background-color: blue; /* still poor contrast for WCAG testing */
+    background-color: blue; 
     color: white;
     padding: 10px 20px;
     display: inline-block;

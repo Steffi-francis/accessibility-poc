@@ -56,7 +56,6 @@
   color: white;
 }
 
-/* Show dropdown when open */
 .dropdown.open ul {
   display: block;
 }
